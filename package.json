@@ -1,0 +1,50 @@
+{
+	"name": "github-project-cli",
+	"version": "1.0.0",
+	"description": "CLI para criação de repositórios privados no GitHub com proteção de branch",
+	"author": "GSB - Typescript Especialist",
+	"license": "ISC",
+	"main": "dist/cli.js",
+	"type": "module",
+	"scripts": {
+		"dev": "ts-node src/cli.ts",
+		"build": "tsc",
+		"start": "tsc && node dist/cli.js",
+		"release": "node release.mjs"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"bin": {
+		"create-github-project": "dist/cli.js"
+	},
+	"pkg": {
+		"compile": false,
+		"targets": [
+			"node18-win-x64"
+		],
+		"scripts": [
+			"dist/**/*.js"
+		],
+		"assets": [
+			"node_modules/@octokit/**/*"
+		]
+	},
+	"keywords": [
+		"cli",
+		"github",
+		"typescript",
+		"repository",
+		"automation"
+	],
+	"dependencies": {
+		"@clack/prompts": "^0.11.0",
+		"@octokit/rest": "^22.0.0",
+		"dotenv": "^17.1.0"
+	},
+	"devDependencies": {
+		"@types/node": "^24.0.11",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.8.3"
+	}
+}
