@@ -114,22 +114,10 @@ A `main` é protegida com:
 - ✅ 1 aprovação obrigatória
 - 🔒 Proteção aplicada também para administradores
 
----
-
-## 📌 Melhorias Futuras (ideias)
-
-- Suporte a repositórios públicos
-- Suporte a organizações
-- Adição de arquivos padrões (`LICENSE`, `.gitignore`, etc)
-- Push inicial automático de código local
-- Templates customizados
-
----
-
 ## 📃 Licença
 
 Este projeto é open-source, sob a licença MIT.
 
 ---
 
-Feito com 💻 por você — feliz automação!
+Feito com 💻 por Guilherme Barros.
